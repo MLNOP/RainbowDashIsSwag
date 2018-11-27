@@ -48,28 +48,29 @@ table {
 }
 /*----------------------------------------------------------------------------*/
 
+
+
 body {
   width: 100%;
   background-color: black;
+  font-family: 'RobotoDraft';
+  color: lightgray;
 }
-.container {
-  display: flex;
-  background: url(img/bg.png) no-repeat black;
-  background-size: cover;
-  background-position: center;
-}
-
 .logo {
-    width: 700px;
-    height: 500px;
+    margin-top: 30%;
     cursor: pointer;
 }
-
 .logo img {
   position: absolute;
   width: 100%;
 }
-
+.txt{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    z-index: 1;
+}
 .fg {
   opacity: .25;
 }
@@ -112,5 +113,24 @@ body {
 
     100% {
         transform: scale3d(1,1,1);
+    }
+}
+
+/*Vue Desktop*/
+@media only screen and (min-width:1370px){
+    .logo{
+        margin-top: 0;
+    }
+    .logo img{
+        width: 50%;
+    }
+}
+/*Vue Tablette*/
+@media only screen and (min-width:768px) and (max-width: 970px){
+    .logo{
+        margin-top: 0;
+    }
+    .logo img{
+        width: 75%;
     }
 }
