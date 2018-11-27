@@ -8,7 +8,7 @@ body {
   height: 100vh;
   justify-content: space-around;
   align-items: center;
-  background: url(bg.png);
+  background: url(img/bg.png);
 }
 
 .logo {
