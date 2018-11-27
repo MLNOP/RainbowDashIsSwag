@@ -54,16 +54,15 @@ body {
 }
 .container {
   display: flex;
-  justify-content: space-around;
   background: url(img/bg.png) no-repeat black;
   background-size: cover;
   background-position: center;
 }
 
 .logo {
-  width: 700px;
-  height: 500px;
-  cursor: pointer;
+    width: 700px;
+    height: 500px;
+    cursor: pointer;
 }
 
 .logo img {
