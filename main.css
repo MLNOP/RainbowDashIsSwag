@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background: url(420.png);
+}
+
+.logo {
+  display: block;
+  width: 700px;
+  height: 500px;
+  position: relative;
+  cursor: pointer;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fg {
+  opacity: .25;
+}
+
+.logo:hover .bg {
+  animation-name: bg;
+  animation-duration: .45s;
+  animation-iteration-count: infinite;
+}
+
+.logo:hover .fg {
+  animation-name: fg;
+  animation-duration: .45s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fg {
+    0% {
+        transform: scale3d(1,1,1);
+    }
+  
+    35% {
+        transform: scale3d(1.04,1.04,1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale3d(1,1,1);
+    }
+}
+
+@keyframes bg {
+    0% {
+        transform: scale3d(1,1,1);
+    }
+
+    25% {
+        transform: scale3d(.93,.93,1);
+    }
+
+    100% {
+        transform: scale3d(1,1,1);
+    }
+}
