@@ -2,30 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="main.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500" rel="stylesheet">
+		<script src="js/main.js"></script>
 		<title>Let's Bounce</title>
 	</head>
 	<body>
-		<embed height="60" type="audio/midi" width="144" src="mp3/ayaya.mp3" volume="60" loop="true" autostart="true" />
-		<audio id="zik" preload="none" autoplay="true" hidden>
-			<source src="mp3/ayaya.mp3" type="audio/mp3" />
-			Votre navigateur n'est pas compatible
-		</audio>
-		<div class="container">
+		<!-- background music-->
+		<div class="container"  onclick="play()">
 			<div class="txt">
-				<p>Tap me to turn my Swag ON!</p>
+				<p>Tap/Touch me to turn my Swag ON!</p>
 			</div>
 			<div class="logo" >
 				<img class="bg" src="img/Rainbow.png" onclick="myFunction()">
 				<img class="fg" src="img/halo.png">
 			</div>
-			
-			<!--<div class="someshit">
-				<img class="urg" src="doge.png">
-			</div> -->
 		</div>
+		<audio id="audio" src="mp3/africa.mp3" ></audio>
 	</body>
 </html>
